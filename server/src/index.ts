@@ -5,6 +5,7 @@ import express from "express";
 //Our Routes
 import bookRoutes from "../routes/bookRoutes";
 import userRoutes from "../routes/userRoutes";
+import orderRoutes from "../routes/orderRoutes";
 
 dotenv.config();
 connectToDatabase();
@@ -16,6 +17,7 @@ const port = process.env.PORT || 4999;
 // if we hit this route then we go to the book route.
 app.use("/api/books", bookRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/orders", orderRoutes);
 
 // app.get("/", (req, res) => res.send("YO"));
 
