@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import BasketScreen from "./screens/BasketScreen";
 import BookScreen from "./screens/BookScreen";
 import BooksScreen from "./screens/BooksScreen";
+import CheckoutScreen from "./screens/CheckoutScreen";
 
 import LoginScreen from "./screens/LoginScreen";
 import ProfileScreen from "./screens/ProfileScreen";
@@ -23,6 +24,7 @@ const App: React.FC = () => {
             <Route path="/login" element={<LoginScreen />} />
             <Route path="/registration" element={<RegistrationScreen />} />
             <Route path="/profile" element={<ProfileScreen />} />
+            <Route path="/checkout" element={<CheckoutScreen />} />
           </Routes>
         </main>
       </Router>
