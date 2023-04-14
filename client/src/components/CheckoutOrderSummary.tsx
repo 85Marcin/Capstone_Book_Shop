@@ -75,7 +75,15 @@ const CheckoutOrderSummary = () => {
             : subtotal}
         </Text>
       </Flex>
-      <PayPalButton />
+      <PayPalButton
+        onPaymentSuccess={onPaymentSuccess as any}
+        onPaymentError={onPaymentError}
+        amount={
+          subtotal <= 50
+            ? Number(Number(subtotal) + Number(standardShipping)).toFixed(2)
+            : subtotal
+        }
+      />
     </Stack>
   );
 };
