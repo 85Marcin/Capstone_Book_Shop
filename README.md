@@ -30,13 +30,9 @@ npm install
 
 cd ..
 
-3. Create a `.env` file in the root directory with your MongoDB connection string:
+3. Seed the database:
 
-MONGO_URI=your_mongodb_connection_string_here
-
-PORT = 4999
-
-TOKEN_SECRET = my_secret
+   npm run seeds
 
 ### Running the Application
 
